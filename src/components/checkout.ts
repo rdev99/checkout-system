@@ -1,6 +1,6 @@
 import { PricingRule } from "../interfaces/pricingRule";
 import { Product } from "../interfaces/product";
-import { ProcessPricingRules } from "./pricingRulesProcessor";
+import { processPricingRules } from "./pricingRulesProcessor";
 
 
 export function Checkout(pricingRules: Map<string,PricingRule>) {
@@ -21,7 +21,7 @@ export function Checkout(pricingRules: Map<string,PricingRule>) {
     }
 
     function total() {
-        return ProcessPricingRules(pricingRules,items);
+        return processPricingRules(pricingRules,items);
     }
     return {
         scan,

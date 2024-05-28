@@ -23,7 +23,7 @@ function applyDiscountOnPrice(noOfItems:number, pricingRule:PricingRule,price:nu
     return costOfProduct;
 }
 
-export function ProcessPricingRules(pricingRules: Map<string,PricingRule>, shoppingCart: Map<Product,number>) {
+export function processPricingRules(pricingRules: Map<string,PricingRule>, shoppingCart: Map<Product,number>) {
     let totalCost = 0;
     for(let [key, value] of shoppingCart) {
         let costOfProduct = 0;

@@ -1,0 +1,14 @@
+{
+  "name": "checkout-system",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "test",
+    "start": "npx tsc && node build/index.js"
+  },
+  "author": "Devesh Ranjan",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
